@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirBnB</title>
-    <link
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="main.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airbnb</title>
+  <link rel="stylesheet" href="main.css">
 </head>
-<body class="container-fluid">
-    <div id="cards"></div>
-    <script src="index.js"></script>
+<body>
+  <!-- Nav - Bar -->
+  <ul>
+    <li><a href="#home"><img width="64px" height="46px"></a></li>
+    <form id="procurar-acomodacao">
+    <li><input type="text" placeholder="Localização"></li>
+    <li><label id="check-in"> Check-in: </label><input type="date" id="check-in" name="check-in"></li>
+    <li><label id="check-out"> Check-out: </label><input type="date" id="check-out" name="check-out"></li>
+    <li><label id="numero-hospedes"> Hóspedes: </label><input type="number" id="numero-hospedes" name="numero-hospedes"></li>
 
-    
+    <li><button type="submit">Buscar</button></li>
+  </form>
+  </ul>
+  <!-- Cabeçalho -->
+  <div class="header">
+    <section>
+      57 estadias · 7 de mai. - 9 de mai.
+    </section>
+    <h2>Acomodações</h2>
+  </div>
+  <!-- FlexBox Informação Sobre as Acomodações -->
+  <div class="flex-container">
+    <div id="acomodacao-info" style="width: 20rem; margin: 2rem" >
+      <img src="img/test.webp" style="width: 20rem;">
+     <h2> Apartment in Son Parc, wonderful views</h2>
+      <p>Tipo: Apartamento</p>
+      <p>Preço: R$433,00</p>
+    </div>
+  </div>
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Footer</p>
+  </div>  
 </body>
 </html>
