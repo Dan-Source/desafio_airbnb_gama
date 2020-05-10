@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Airbnb</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <!-- Nav - Bar -->
-  <ul>
-    <li><a href="#home"><img width="64px" height="46px"></a></li>
-    <form id="procurar-acomodacao">
-    <li><input type="text" placeholder="Localização"></li>
-    <li><label id="check-in"> Check-in: </label><input type="date" id="check-in" name="check-in"></li>
-    <li><label id="check-out"> Check-out: </label><input type="date" id="check-out" name="check-out"></li>
-    <li><label id="numero-hospedes"> Hóspedes: </label><input type="number" id="numero-hospedes" name="numero-hospedes"></li>
+<html lang="pt-Br">
 
-    <li><button type="submit">Buscar</button></li>
-  </form>
-  </ul>
-  <!-- Cabeçalho -->
-  <div class="header">
-    <section>
-      57 estadias · 7 de mai. - 9 de mai.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+
+    <link rel="shortcut icon" type="image/png" href="src/assets/airbnb_icon.svg" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar__logo">
+            <img class="logo__image" src="src/assets/airbnb_logo.svg" alt="img">
+            <h1 class="logo__name">airbnb</h1>
+        </div>
+
+        <div class="topbar__filter">
+            <div class="filter__location">
+                <p class="location__name">Localização</p>
+            </div>
+            <div class="filter__date">
+                Data
+            </div>
+            <div class="filter__guests">
+                Número de Hospedes
+            </div>
+            <div class="filter__search">
+                <img src="src/assets/search_icon.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="info">
+            <h2 class="info__local">Acomodações</h2>
+        </div>
+
+        <div id="places" class="places"></div>
     </section>
-    <h2>Acomodações</h2>
-  </div>
-  <!-- FlexBox Informação Sobre as Acomodações -->
-  <div class="flex-container">
-    <div id="acomodacao-info" style="width: 20rem; margin: 2rem" >
-      <img src="img/test.webp" style="width: 20rem;">
-     <h2> Apartment in Son Parc, wonderful views</h2>
-      <p>Tipo: Apartamento</p>
-      <p>Preço: R$433,00</p>
-    </div>
-  </div>
-  <!-- Rodapé -->
-  <div class="footer">
-    <p>Footer</p>
-  </div>  
+
+    <footer>
+
+    </footer>
+
+    <script src="src/index.js"></script>
 </body>
+
 </html>
